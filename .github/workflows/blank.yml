@@ -28,7 +28,7 @@ jobs:
 
       - name: Add Hugging Face remote and push to Spaces
         env:
-          HF_TOKEN: ${{ secrets.CASE_STUDY_1_SECRET }}
+          HF_TOKEN: ${{ secrets.chatbot_token }}
         run: |
           git remote add space https://huggingface.co/spaces/BashirG/ChatBotNew
           git push --force "https://huggingface.co:${HF_TOKEN}@huggingface.co/spaces/BashirG/ChatBotNew" main
