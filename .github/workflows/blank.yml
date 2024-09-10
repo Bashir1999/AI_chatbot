@@ -31,4 +31,4 @@ jobs:
           HF_TOKEN: ${{ secrets.CASE_STUDY_1_SECRET }}
         run: |
           git remote add space https://huggingface.co/spaces/BashirG/ChatBotNew
-          git push --force "https://huggingface.co:${HF_TOKEN}huggingface.co/spaces/BashirG/ChatBotNew" main
+          git push --force "https://huggingface.co:${HF_TOKEN}@huggingface.co/spaces/BashirG/ChatBotNew" main
