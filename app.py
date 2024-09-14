@@ -1,8 +1,7 @@
 import gradio as gr
 from huggingface_hub import InferenceClient
 
-client = InferenceClient("mattshumer/Reflection-Llama-3.1-70B",
-    token="hf_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
+client = InferenceClient("mattshumer/Reflection-Llama-3.1-70B")
 
 #meta-llama/Meta-Llama-3.1-8B-Instruct
 #HuggingFaceH4/zephyr-7b-beta
