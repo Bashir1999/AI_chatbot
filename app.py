@@ -1,7 +1,7 @@
 import gradio as gr
 from huggingface_hub import InferenceClient
 
-client = InferenceClient("01-ai/Yi-Coder-9B-Chat")
+client = InferenceClient("microsoft/Phi-3.5-mini-instruct")
 
 #meta-llama/Meta-Llama-3.1-8B-Instruct
 #HuggingFaceH4/zephyr-7b-beta
