@@ -1,7 +1,10 @@
 import gradio as gr
 from huggingface_hub import InferenceClient
 
-client = InferenceClient("HuggingFaceH4/zephyr-7b-beta")
+client = InferenceClient("meta-llama/Meta-Llama-3.1-8B-Instruct")
+
+#meta-llama/Meta-Llama-3.1-8B-Instruct
+#HuggingFaceH4/zephyr-7b-beta
 
 PERSONALITIES = {
     "Friendly": "You are a friendly and helpful assistant.",
