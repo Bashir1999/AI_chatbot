@@ -3,7 +3,7 @@ from huggingface_hub import InferenceClient
 
 client = InferenceClient("HuggingFaceH4/zephyr-7b-beta")
 
-# Added from the team
+# Added by Ahmad Seayar Sroosh
 PERSONALITIES = {
     "Friendly": "You are a friendly and helpful assistant.",
     "Professional": "You are a professional and concise assistant.",
@@ -31,7 +31,7 @@ def respond(message, history, personality):
     
     return history, ""
 
-# AI Generated Function
+# # Added by Ahmad Seayar Sroosh
 def generate_fun_fact(history):
     message = "Give me a fun fact."
     system_message = "You are a helpful assistant that shares fun facts when asked."
@@ -53,7 +53,7 @@ def generate_fun_fact(history):
     
     return history
 
-# AI Generated Function
+# # Added by Ahmad Seayar Sroosh
 def generate_daily_challenge(history):
     message = "Give me a daily challenge."
     system_message = "You are a helpful assistant that gives fun or motivational daily challenges."
@@ -72,7 +72,7 @@ def generate_daily_challenge(history):
 
     return history
 
-# AI Generated Function
+# Added by Ahmad Seayar Sroosh
 def generate_inspiration(history):
     message = "Give me an inspirational quote or motivational message."
     system_message = "You are a helpful assistant that provides inspiring or motivational quotes when asked."
@@ -98,7 +98,7 @@ def generate_inspiration(history):
 def clear_conversation():
     return [], ""
 
-# CSS is done from the team. 
+# Added by Ahmad Seayar Sroosh 
 
 with gr.Blocks(css="""
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
